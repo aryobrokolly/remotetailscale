@@ -28,6 +28,9 @@ finish(){
     echo "Sertakan Sumber jika mau di kembangkan"
     echo ""
 }
+update(){
+	tailscale update
+}
 
 download_files()
 {
@@ -83,6 +86,7 @@ download_files()
         clear
    	rm -f $D4/setting.js && wget -O $D4/setting.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/setting.js && chmod +x $D4/setting.js
         clear
+	update
     	finish
 }
 
