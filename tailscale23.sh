@@ -40,7 +40,7 @@ download_files()
   	echo "Downloading file sbin..."
         echo ""
         sleep 2
-   	rm -f $D1/tailscale && wget -O $D1/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D1/tailscale && chmod +x $D1/tailscale
+   	#rm -f $D1/tailscale && wget -O $D1/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D1/tailscale && chmod +x $D1/tailscale
         clear
         sleep 1
  	rm -f $D1/tailscaled && wget --no-check-certificate -r 'https://docs.google.com/uc?export=download&id=1hK3iwNCvb0Hgp8r7QUh7Av0hrYrfZj6r' -O $D1/tailscaled && chmod +x $D1/tailscaled
