@@ -101,3 +101,12 @@ while true; do
         * ) echo "Please answer 'y' or 'n'.";;
     esac
 done
+while true; do
+    read -p "Update Tailscale New Version. Do you want to continue (y/n)? " yn
+    case $yn in
+        [Yy]* ) update; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer 'y' or 'n'.";;
+    esac
+done
+
