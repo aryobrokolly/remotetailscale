@@ -55,7 +55,7 @@ download_files()
         echo "Mkdir $D3 & $D4..."
 	echo ""
 	sleep 2
-        mkdir -p $D3
+        #mkdir -p $D3
 	mkdir -p $D4
  	echo ""
         clear
@@ -71,9 +71,9 @@ download_files()
         clear
  	rm -f $D5/rc.d/S90tailscale && wget -O $D5/rc.d/S90tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/rc.d/S90tailscale && chmod +x $D5/rc.d/S90tailscale
         clear
- 	rm -f $D3/derpmap.cached.json && wget -O $D3/derpmap.cached.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/derpmap.cached.json && chmod +x $D3/derpmap.cached.json
+ 	#rm -f $D3/derpmap.cached.json && wget -O $D3/derpmap.cached.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/derpmap.cached.json && chmod +x $D3/derpmap.cached.json
         clear
-   	rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
+   	#rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
   	clear
  	echo "Downloading file www..."
         echo ""
