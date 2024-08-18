@@ -28,9 +28,6 @@ finish(){
     echo "Sertakan Sumber jika mau di kembangkan"
     echo ""
 }
-update(){
-	tailscale update
-}
 
 download_files()
 {
@@ -101,6 +98,12 @@ while true; do
         * ) echo "Please answer 'y' or 'n'.";;
     esac
 done
+
+
+update(){
+	tailscale update
+}
+
 while true; do
     read -p "Update Tailscale New Version. Do you want to continue (y/n)? " yn
     case $yn in
