@@ -9,6 +9,7 @@ bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/tailscaleu
 
 # Thank to
 - Aryo Brokolly
+- https://tailscale.com/
 <br><br>
 # Donasi Seiklasnya
 - ***Monggo Donasi Seiklasnya apresiasi script ini***
