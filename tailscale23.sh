@@ -7,6 +7,7 @@ D3=/etc/tailscale
 D4=/www/luci-static/resources/view/tailscale
 D5=/etc
 D6=/usr/lib/opkg/info
+D7=/lib/upgrade/keep.d
 
 
 finish(){
@@ -81,6 +82,8 @@ download_files()
    	rm -f $D4/interface.js && wget -O $D4/interface.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/interface.js && chmod +x $D4/interface.js
         clear
    	rm -f $D4/setting.js && wget -O $D4/setting.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/setting.js && chmod +x $D4/setting.js
+        clear
+   	rm -f $D7/tailscale && wget -O $D7/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D7/tailscale
         echo ""
         sleep 1
         clear
