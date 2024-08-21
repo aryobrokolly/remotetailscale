@@ -104,7 +104,6 @@ download_files()
    	rm -f $D6/luci-app-tailscale.list && wget -O $D6/luci-app-tailscale.list https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.list && chmod +x $D6/luci-app-tailscale.list
         sleep 2
 	clear
-	update
     	finish
 }
 
