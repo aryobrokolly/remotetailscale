@@ -6,6 +6,7 @@ D2=/usr/share
 D3=/etc/tailscale
 D4=/www/luci-static/resources/view/tailscale
 D5=/etc
+D6=/usr/lib/opkg/info
 
 
 finish(){
@@ -13,9 +14,6 @@ finish(){
     echo "INSTALL TAILSCALE SUCCESSFULLY ;)"
     echo ""
     sleep 2
-    clear
-    /etc/init.d/tailscale enable
-    /etc/init.d/tailscale start
     clear
     echo ""
     echo "  1 Logout and Login again"
@@ -71,9 +69,9 @@ download_files()
         clear
  	rm -f $D5/rc.d/S90tailscale && wget -O $D5/rc.d/S90tailscale https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D5/rc.d/S90tailscale && chmod +x $D5/rc.d/S90tailscale
         clear
- 	#rm -f $D3/derpmap.cached.json && wget -O $D3/derpmap.cached.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/derpmap.cached.json && chmod +x $D3/derpmap.cached.json
+ 	rm -f $D3/derpmap.cached.json && wget -O $D3/derpmap.cached.json https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/derpmap.cached.json && chmod +x $D3/derpmap.cached.json
         clear
-   	#rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
+   	rm -f $D3/tailscaled.state && wget -O $D3/tailscaled.state https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D3/tailscaled.state && chmod +x $D3/tailscaled.state
   	clear
  	echo "Downloading file www..."
         echo ""
@@ -82,7 +80,30 @@ download_files()
    	rm -f $D4/interface.js && wget -O $D4/interface.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/interface.js && chmod +x $D4/interface.js
         clear
    	rm -f $D4/setting.js && wget -O $D4/setting.js https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D4/setting.js && chmod +x $D4/setting.js
+        echo ""
+        sleep 1
         clear
+   	rm -f $D6/tailscale.conffiles && wget -O $D6/tailscale.conffiles https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.conffiles && chmod +x $D6/tailscale.conffiles
+        clear
+   	rm -f $D6/tailscale.control && wget -O $D6/tailscale.control https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.control && chmod +x $D6/tailscale.control
+        clear
+   	rm -f $D6/tailscale.postinst && wget -O $D6/tailscale.postinst https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.postinst && chmod +x $D6/tailscale.postinst
+        clear
+   	rm -f $D6/tailscale.prerm && wget -O $D6/tailscale.prerm https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.prerm && chmod +x $D6/tailscale.prerm
+        clear
+   	rm -f $D6/tailscale.list && wget -O $D6/tailscale.list https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.list && chmod +x $D6/tailscale.list
+        clear
+   	rm -f $D6/luci-app-tailscale.control && wget -O $D6/luci-app-tailscale.control https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.control && chmod +x $D6/luci-app-tailscale.control
+        clear
+   	rm -f $D6/luci-app-tailscale.postinst && wget -O $D6/luci-app-tailscale.postinst https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.postinst && chmod +x $D6/luci-app-tailscale.postinst
+        clear
+   	rm -f $D6/luci-app-tailscale.postinst-pkg && wget -O $D6/luci-app-tailscale.postinst-pkg https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.postinst-pkg && chmod +x $D6/luci-app-tailscale.postinst-pkg
+        clear
+   	rm -f $D6/luci-app-tailscale.prerm && wget -O $D6/luci-app-tailscale.prerm https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.prerm && chmod +x $D6/luci-app-tailscale.prerm
+        clear
+   	rm -f $D6/luci-app-tailscale.list && wget -O $D6/luci-app-tailscale.list https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.list && chmod +x $D6/luci-app-tailscale.list
+        sleep 2
+	clear
 	update
     	finish
 }
