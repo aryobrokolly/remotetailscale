@@ -53,7 +53,7 @@ download_files()
         echo "Mkdir tailscale..."
 	echo ""
 	sleep 2
-        #mkdir -p $D3
+        mkdir -p $D3
 	mkdir -p $D4
  	echo ""
         clear
