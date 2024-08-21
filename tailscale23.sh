@@ -54,6 +54,7 @@ download_files()
 	echo ""
 	sleep 2
         mkdir -p $D3
+	sleep 1
 	mkdir -p $D4
  	echo ""
         clear
