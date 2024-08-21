@@ -84,23 +84,14 @@ download_files()
         sleep 1
         clear
    	rm -f $D6/tailscale.conffiles && wget -O $D6/tailscale.conffiles https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.conffiles && chmod +x $D6/tailscale.conffiles
-        clear
    	rm -f $D6/tailscale.control && wget -O $D6/tailscale.control https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.control && chmod +x $D6/tailscale.control
-        clear
    	rm -f $D6/tailscale.postinst && wget -O $D6/tailscale.postinst https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.postinst && chmod +x $D6/tailscale.postinst
-        clear
    	rm -f $D6/tailscale.prerm && wget -O $D6/tailscale.prerm https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.prerm && chmod +x $D6/tailscale.prerm
-        clear
    	rm -f $D6/tailscale.list && wget -O $D6/tailscale.list https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/tailscale.list && chmod +x $D6/tailscale.list
-        clear
    	rm -f $D6/luci-app-tailscale.control && wget -O $D6/luci-app-tailscale.control https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.control && chmod +x $D6/luci-app-tailscale.control
-        clear
    	rm -f $D6/luci-app-tailscale.postinst && wget -O $D6/luci-app-tailscale.postinst https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.postinst && chmod +x $D6/luci-app-tailscale.postinst
-        clear
    	rm -f $D6/luci-app-tailscale.postinst-pkg && wget -O $D6/luci-app-tailscale.postinst-pkg https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.postinst-pkg && chmod +x $D6/luci-app-tailscale.postinst-pkg
-        clear
    	rm -f $D6/luci-app-tailscale.prerm && wget -O $D6/luci-app-tailscale.prerm https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.prerm && chmod +x $D6/luci-app-tailscale.prerm
-        clear
    	rm -f $D6/luci-app-tailscale.list && wget -O $D6/luci-app-tailscale.list https://raw.githubusercontent.com/aryobrokolly/tailscaleup/main/$D6/luci-app-tailscale.list && chmod +x $D6/luci-app-tailscale.list
         sleep 2
 	clear
