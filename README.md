@@ -6,7 +6,10 @@
 ```
 bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/remotetailscale/master/tailscale23.sh')"
 ```
-
+- Delete installation script:
+```
+bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/remotetailscale/master/tailscalerm.sh')"
+```
 # Thank to
 - Aryo Brokolly
 - https://tailscale.com/
